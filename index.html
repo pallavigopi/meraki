@@ -10,6 +10,7 @@
 
         <link rel="stylesheet" href="./styles/index.css">
     <!-- <link href="assets/icon.png" rel="icon" type="image/gif"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
 
@@ -17,21 +18,22 @@
     <div id="fullpage">
         <button class="nav-tgl" type="button" aria-label="toggle menu"><!-- this span just for the three dividers in the hamburger button--><span aria-hidden="true"></span></button>
         <nav class="nav">
-            
-            <ul style="color:darkgray;">
-                <li>element one</li>
-                <li>element two</li>
+            <ul class="nav-toggle nav-ul">
+                <li id="landing">Landing</li>
+                <li id="aboutus">AboutUs</li>
                 <li>element three</li>
                 <li>element four</li>
             </ul>
         </nav>
-        <div id="sections-container">
+        <div id="landingSection" class="section">
             <div class="section section-0" style="height:100vh;padding-top: 0px;background-color: rgb(78, 194, 169)">
                     <div class="section-content">
+                        Landing page
                     </div>
             </div>
-            <div class="section section-1" style="height:100vh;padding-top: 0px;background-color: rgb(33, 83, 73)">
+            <div id="aboutusSection" class="section section-1" style="height:100vh;padding-top: 0px;background-color: rgb(33, 83, 73)">
                     <div class="section-content">
+                        About us page
                     </div>
             </div>
         </div>

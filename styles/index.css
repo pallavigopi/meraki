@@ -3,9 +3,18 @@ body{
     overflow-x: hidden;
 }
 
-.nav ul {
+.nav-toggle {
     display: none;
-  }
+}
+
+.nav-ul {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  color: white;
+}
+
   .nav-tgl {
     display: inline-block;
     cursor: pointer;
@@ -88,5 +97,9 @@ body{
   .active.nav:before {
     visibility: visible;
     clip-path: circle(100%);
+  }
+
+  .section {
+    height: 100vh;
   }
   
