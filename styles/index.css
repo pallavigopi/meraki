@@ -8,14 +8,22 @@ body{
 }
 
 .nav-ul {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    color: white;
+    padding-top: 5rem;
+    padding-left: 5rem;
+    list-style: none;
+    font-size: 4rem;
 }
 
-  .nav-tgl {
+.nav-ul li{
+  padding: 1rem;
+}
+  
+.nav-tgl {
     display: inline-block;
     cursor: pointer;
     position: fixed;
