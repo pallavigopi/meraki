@@ -102,11 +102,12 @@ section{
     content: '';
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.99);
     transition: all 500ms ease-in-out;
     clip-path: circle(30px at calc(100% - 65px) 65px);
     visibility: hidden;
   }
+  
   .active.nav:before {
     visibility: visible;
     clip-path: circle(100%);
