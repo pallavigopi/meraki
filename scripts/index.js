@@ -12,21 +12,21 @@ $(document).ready(function(){
         1000);
   });
 
-  $("#aboutus").click(function() {
+  $("#aboutUs").click(function() {
     hideNav();
     $('html,body').animate({
         scrollTop: $("#aboutUsSection").offset().top},
         1000);
   });
 
-  $("#problemstatements").click(function() {
+  $("#problemStatements").click(function() {
     hideNav();
     $('html,body').animate({
         scrollTop: $("#problemStatementsSection").offset().top},
         1000);
   });
 
-  $("#eventformat").click(function() {
+  $("#eventFormat").click(function() {
     hideNav();
     $('html,body').animate({
         scrollTop: $("#eventFormatSection").offset().top},
