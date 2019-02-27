@@ -22,14 +22,14 @@ $(document).ready(function(){
   $("#problemstatements").click(function() {
     hideNav();
     $('html,body').animate({
-        scrollTop: $("#problemStatementsSection").offset().top},
+        scrollTop: $("#problemstatementsSection").offset().top},
         1000);
   });
 
   $("#eventformat").click(function() {
     hideNav();
     $('html,body').animate({
-        scrollTop: $("#eventFormatSection").offset().top},
+        scrollTop: $("#eventformatSection").offset().top},
         1000);
   });
 
