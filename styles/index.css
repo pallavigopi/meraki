@@ -114,10 +114,10 @@ section{
   }
 
   .section {
-    height: 105vh;
+    height: 100vh;
     padding-top: 0px;
   }
-  
+
   .parallelogram {
     margin-top:-165vh;
     width: 25vw;
@@ -148,14 +148,18 @@ section{
   
   .content{
     z-index:10;
-    position:absolute;
     top:15%;
-    left:40%;
+    position:absolute;
     font-size:1.5rem;
     font-family:sans;
-    padding:5vw;
   }
   
+  .shift-right{
+    left:40%;
+    padding-left: 35vw;
+    padding:5rem;
+  }
+
   .left-side-wrapper{
     margin-left:-7.5rem;
     margin-top:-10vh;
