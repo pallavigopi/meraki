@@ -4,6 +4,16 @@ const nav = document.getElementsByClassName('nav')[0];
 const btn = document.getElementsByClassName('nav-tgl')[0];
 const navUl = document.getElementsByClassName('nav-toggle')[0];
 
+// function scrollNav(e) {
+//   var id= e.target.id + "Section";
+//   $("#"+ e.target.id).click(function() {
+//     hideNav();
+//     $('html,body').animate({
+//         scrollTop: $("#"+id).offset().top},
+//         1000);
+//   });
+// }
+
 $(document).ready(function(){
   $("#landing").click(function() {
     hideNav();
@@ -22,14 +32,14 @@ $(document).ready(function(){
   $("#problemstatements").click(function() {
     hideNav();
     $('html,body').animate({
-        scrollTop: $("#problemStatementsSection").offset().top},
+        scrollTop: $("#problemstatementsSection").offset().top},
         1000);
   });
 
   $("#eventformat").click(function() {
     hideNav();
     $('html,body').animate({
-        scrollTop: $("#eventFormatSection").offset().top},
+        scrollTop: $("#eventformatSection").offset().top},
         1000);
   });
 
