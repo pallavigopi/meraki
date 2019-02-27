@@ -156,8 +156,8 @@ section{
   
   .shift-right{
     left:40%;
+    padding: 5rem;
     padding-left: 35vw;
-    padding:5rem;
   }
 
   .left-side-wrapper{
