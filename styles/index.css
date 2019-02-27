@@ -3,6 +3,10 @@ body{
     overflow-x: hidden;
 }
 
+section{
+  height:105vh;
+}
+
 .nav-toggle {
     display: none;
 }
