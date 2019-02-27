@@ -15,9 +15,45 @@ $(document).ready(function(){
   $("#aboutus").click(function() {
     hideNav();
     $('html,body').animate({
-        scrollTop: $("#aboutusSection").offset().top},
+        scrollTop: $("#aboutUsSection").offset().top},
         1000);
   });
+
+  $("#problemstatements").click(function() {
+    hideNav();
+    $('html,body').animate({
+        scrollTop: $("#problemStatementsSection").offset().top},
+        1000);
+  });
+
+  $("#eventformat").click(function() {
+    hideNav();
+    $('html,body').animate({
+        scrollTop: $("#eventFormatSection").offset().top},
+        1000);
+  });
+
+  $("#gallery").click(function() {
+    hideNav();
+    $('html,body').animate({
+        scrollTop: $("#gallerySection").offset().top},
+        1000);
+  });
+
+  $("#timeline").click(function() {
+    hideNav();
+    $('html,body').animate({
+        scrollTop: $("#timelineSection").offset().top},
+        1000);
+  });
+
+  $("#contact").click(function() {
+    hideNav();
+    $('html,body').animate({
+        scrollTop: $("#contactSection").offset().top},
+        1000);
+  });
+
 
 });
 
