@@ -1,6 +1,19 @@
 body{
   margin:0;
   overflow-x: hidden;
+  background: whitesmoke;
+  color: #366669;
+}
+
+p{
+  font-family: 'Lato', sans-serif;
+}
+
+h1{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 4.5rem;
+  margin-top: 0vh;
+  color: #3e5152;
 }
 
 section{
@@ -117,13 +130,13 @@ padding: 1rem;
 
 /* BACKGROUND SHAPES */
 .parallelogram {
-  margin-top:-100vh;
-  width: 40vw;
-  height: 220rem;
-  transform:skew(60deg);
-  background: #e5e5e5;
-  overflow:none;
-  z-index:-10;
+  margin-top: 10vh;
+    width: 90vw;
+    height: 152rem;
+    transform: skew(60deg);
+    background: white;
+    overflow: none;
+    z-index: -10;
 }
 .reverse-parallelogram {
   margin-top: -67vh;
@@ -250,8 +263,5 @@ padding: 1rem;
 @media screen and (max-width: 1600px) {
   .parallelogram{
     transform: skew(50deg);
-  }
-  .reverse-parallelogram{
-    transform: skew(130deg);
   }
 }
