@@ -1,245 +1,229 @@
 body{
-    margin:0;
-    overflow-x: hidden;
+  margin:0;
+  overflow-x: hidden;
 }
 
 section{
-  height:105vh;
+height:105vh;
 }
 
 /* NAVBAR CODE*/
 .nav-toggle {
-    display: none;
+  display: none;
 }
 
 .nav-ul {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    color: white;
-    padding-top: 1.5rem;
-    padding-left: 5rem;
-    list-style: none;
-    font-size: 2.5rem;
-    cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  color: white;
+  padding-top: 1.5rem;
+  padding-left: 5rem;
+  list-style: none;
+  font-size: 2.5rem;
+  cursor: pointer;
 }
 
 .nav-ul li{
-  padding: 1rem;
+padding: 1rem;
 }
-  
-.nav-tgl {
-    display: inline-block;
-    cursor: pointer;
-    position: fixed;
-    z-index: 100;
-    right: 30px;
-    top: 30px;
-    width: 70px;
-    height: 70px;
-    border: none;
-    border-radius: 50%;
-    padding: 0;
-    background: #fff;
-    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.24);
-    line-height: 0.6;
-    text-align: center;
-  }
-  .nav-tgl > span {
-    display: inline-block;
-    position: relative;
-    height: 2px;
-    width: 34px;
-    border-radius: 1px;
-    background: #293335;
-    vertical-align: middle;
-  }
-  .nav-tgl > span:before, .nav-tgl > span:after {
-    display: inline-block;
-    position: absolute;
-    content: "";
-    height: 2px;
-    border-radius: 1px;
-    background: #293335;
-    transition: all 200ms;
-  }
-  .nav-tgl > span:before {
-    top: -11px;
-    left: 3px;
-    width: 28px;
-  }
-  .nav-tgl > span:after {
-    top: 11px;
-    left: 6px;
-    width: 22px;
-  }
-  .nav-tgl:focus {
-    outline: none;
-  }
-  .nav-tgl:hover > span:after, .nav-tgl:hover > span:before {
-    width: 34px;
-    left: 0;
-  }
-  .nav-tgl.toggled > span {
-    height: 0;
-  }
-  .nav-tgl.toggled > span:after, .nav-tgl.toggled > span:before {
-    top: 0px;
-    left: 0;
-    width: 34px;
-  }
-  .nav-tgl.toggled > span:after {
-    transform: rotate(-45deg);
-  }
-  .nav-tgl.toggled > span:before {
-    transform: rotate(45deg);
-  }
-  .nav:before {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    content: '';
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.99);
-    transition: all 500ms ease-in-out;
-    clip-path: circle(30px at calc(100% - 65px) 65px);
-    visibility: hidden;
-  }
-  
-  .active.nav:before {
-    visibility: visible;
-    clip-path: circle(100%);
-  }
-  /* NAVBAR ENDS */
 
-  /* BACKGROUND SHAPES */
-  .parallelogram {
-    margin-top:-165vh;
-    width: 25vw;
-    height: 220rem;
-    transform:rotate(-45deg);
-    background: #e5e5e5;
-    overflow:none;
-    z-index:-10;
-  }
-  .reverse-parallelogram {
-    margin-top:-58vh;
-    width: 25vw;
-    height: 180rem;
-    transform:rotate(45deg);
-    background: #e5e5e5;
-    overflow:none;
-    z-index:-10;
-  }
-  .triangle-corner{
+.nav-tgl {
+  display: inline-block;
+  cursor: pointer;
+  position: fixed;
+  z-index: 100;
+  right: 30px;
+  top: 30px;
+  width: 70px;
+  height: 70px;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  background: #fff;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.24);
+  line-height: 0.6;
+  text-align: center;
+}
+.nav-tgl > span {
+  display: inline-block;
+  position: relative;
+  height: 2px;
+  width: 34px;
+  border-radius: 1px;
+  background: #293335;
+  vertical-align: middle;
+}
+.nav-tgl > span:before, .nav-tgl > span:after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  height: 2px;
+  border-radius: 1px;
+  background: #293335;
+  transition: all 200ms;
+}
+.nav-tgl > span:before {
+  top: -11px;
+  left: 3px;
+  width: 28px;
+}
+.nav-tgl > span:after {
+  top: 11px;
+  left: 6px;
+  width: 22px;
+}
+.nav-tgl:focus {
+  outline: none;
+}
+.nav-tgl:hover > span:after, .nav-tgl:hover > span:before {
+  width: 34px;
+  left: 0;
+}
+.nav-tgl.toggled > span {
+  height: 0;
+}
+.nav-tgl.toggled > span:after, .nav-tgl.toggled > span:before {
+  top: 0px;
+  left: 0;
+  width: 34px;
+}
+.nav-tgl.toggled > span:after {
+  transform: rotate(-45deg);
+}
+.nav-tgl.toggled > span:before {
+  transform: rotate(45deg);
+}
+.nav:before {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.99);
+  transition: all 500ms ease-in-out;
+  clip-path: circle(30px at calc(100% - 65px) 65px);
+  visibility: hidden;
+}
+
+.active.nav:before {
+  visibility: visible;
+  clip-path: circle(100%);
+}
+/* NAVBAR ENDS */
+
+/* BACKGROUND SHAPES */
+.parallelogram {
+  margin-top:-165vh;
+  width: 25vw;
+  height: 220rem;
+  transform:rotate(-45deg);
+  background: #e5e5e5;
+  overflow:none;
+  z-index:-10;
+}
+.reverse-parallelogram {
+  margin-top:-58vh;
+  width: 25vw;
+  height: 180rem;
+  transform:rotate(45deg);
+  background: #e5e5e5;
+  overflow:none;
+  z-index:-10;
+}
+.triangle-corner{
+  width: 0;
+  height: 0;
+  margin-top:-50rem;
+  border-top: 20vh solid transparent;
+  border-left:20vh solid #e5e5e5;
+  border-bottom: 20vh solid transparent;
+  z-index:1;
+}
+/* BACKGROUND SHAPES ENDS*/
+
+/* CODE RELATED TO THE SECTIONS*/
+.section {
+  height: 100vh;
+  padding-top: 0px;
+}
+.content{
+  z-index:10;
+  top:15%;
+  position:absolute;
+  font-size:1.5rem;
+  font-family:sans;
+} /* used to postion the content over the bg*/
+
+.shift-right{
+  left:40%;
+  padding: 5rem;
+  padding-left: 35vw;
+} /* to move the content to the right side*/
+
+/*left and right triangle wrapping classes */
+.left-side-wrapper{
+  margin-left:-7.5rem;
+  margin-top:-10vh;
+}
+.right-bottom-wrapper{
+  position:absolute;
+  margin-left:60vh;
+  margin-top:-10vh;
+}
+
+/* code for triangles*/
+.triangle-small-p{
     width: 0;
     height: 0;
-    margin-top:-50rem;
-    border-top: 20vh solid transparent;
-    border-left:20vh solid #e5e5e5;
-    border-bottom: 20vh solid transparent;
-    z-index:1;
-  }
-  /* BACKGROUND SHAPES ENDS*/
-  
-  /* CODE RELATED TO THE SECTIONS*/
-  .section {
-    height: 100vh;
-    padding-top: 0px;
-  }
-  .content{
-    z-index:10;
-    top:15%;
-    position:absolute;
-    font-size:1.5rem;
-    font-family:sans;
-  } /* used to postion the content over the bg*/
-  
-  .shift-right{
-    left:40%;
-    padding: 5rem;
-    padding-left: 35vw;
-  } /* to move the content to the right side*/
+    border-left: 90px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 100px solid tomato;
+}
+.triangle-small-p-bottom{
+    width: 0;
+    height: 0;
+    border-left: 90px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 100px solid tomato;
+    opacity: 0.5 ;
+    z-index:-5;
+}
 
-  /*left and right triangle wrapping classes */
-  .left-side-wrapper{
-    margin-left:-7.5rem;
-    margin-top:-10vh;
-  }
-  .right-bottom-wrapper{
-    position:absolute;
-    margin-left:60vh;
-    margin-top:-10vh;
-  }
+.content h1{
+  font-size:3.5rem;
+  margin-top:0vh;
+  color:#366669;
+}
 
-  /* code for triangles*/
-  .triangle-small-p{
-      width: 0;
-      height: 0;
-      border-left: 90px solid transparent;
-      border-right: 0px solid transparent;
-      border-bottom: 100px solid tomato;
-  }
-  .triangle-small-p-bottom{
-      width: 0;
-      height: 0;
-      border-left: 90px solid transparent;
-      border-right: 0px solid transparent;
-      border-bottom: 100px solid tomato;
-      opacity: 0.5 ;
-      z-index:-5;
-  }
-  
-  .content h1{
-    font-size:3.5rem;
-    margin-top:0vh;
-    color:#366669;
-  }
+/* css code for rectangle[NOT USED RIGHT NOW]*/
+#rectangle-wrap{
+  margin-top:10vh;
+}
+#rect1,#rect2,#rect3,#rect4{
+  position:absolute;
+  width:250px;
+  height:50px;
+  background-color:darkslategray;
+  transform:rotateZ(-45deg);
+  opacity:0.7;
+}
+#rect1{
+  margin-top:20vh;
+}
+#rect2{
+  margin-top:0vh;
+}
+#rect3{
+  margin-top:60vh;
+  margin-left:-39vh;
+}
+#rect4{
+  margin-top:45vh;
+  margin-left:-45vh;
+}
 
-  /* css code for rectangle[NOT USED RIGHT NOW]*/
-  #rectangle-wrap{
-    margin-top:10vh;
-  }
-  #rect1,#rect2,#rect3,#rect4{
-    position:absolute;
-    width:250px;
-    height:50px;
-    background-color:darkslategray;
-    transform:rotateZ(-45deg);
-    opacity:0.7;
-  }
-  #rect1{
-    margin-top:20vh;
-  }
-  #rect2{
-    margin-top:0vh;
-  }
-  #rect3{
-    margin-top:60vh;
-    margin-left:-39vh;
-  }
-  #rect4{
-    margin-top:45vh;
-    margin-left:-45vh;
-  }
-
-  /* Dots CSS */
-  .dot{
-    width: 50px;
-    height: 50px;
-    background: grey;
-    border-radius: 50%;
-    margin: 10px;
-    display: inline-block;
-  }
-  #matrix{
-    float: right;
-    padding-right:2em;
-    width: 20vh;
-    z-index: 1;
-  
-  }
-  /* CODE RELATED SECTIONS END */
+/* CODE RELATED SECTIONS END */
