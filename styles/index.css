@@ -118,18 +118,18 @@ padding: 1rem;
 /* BACKGROUND SHAPES */
 .parallelogram {
   margin-top:-165vh;
-  width: 25vw;
+  width: 40vw;
   height: 220rem;
-  transform:rotate(-45deg);
+  transform:skew(60deg);
   background: #e5e5e5;
   overflow:none;
   z-index:-10;
 }
 .reverse-parallelogram {
   margin-top: -67vh;
-  width: 25vw;
+  width: 40vw;
   height: 180rem;
-  transform: rotate(45deg);
+  transform: skew(120deg);
   background: #e5e5e5;
   overflow: none;
   z-index: -10;
@@ -248,13 +248,10 @@ padding: 1rem;
 /* CODE RELATED SECTIONS END */
 
 @media screen and (max-width: 1600px) {
-  .reverse-parallelogram {
-    margin-top:-58vh;
-    width: 25vw;
-    height: 180rem;
-    transform:rotate(45deg);
-    background: #e5e5e5;
-    overflow:none;
-    z-index:-10;
+  .parallelogram{
+    transform: skew(50deg);
+  }
+  .reverse-parallelogram{
+    transform: skew(130deg);
   }
 }
