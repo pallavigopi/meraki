@@ -160,9 +160,14 @@ padding: 1rem;
 
 .shift-right{
   left:40%;
-  padding: 5rem;
+  padding: 12rem;
   padding-left: 35vw;
 } /* to move the content to the right side*/
+
+.center-text{
+  text-align: center;
+  padding: 10vw;
+}
 
 /*left and right triangle wrapping classes */
 .left-side-wrapper{
