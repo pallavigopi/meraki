@@ -126,13 +126,13 @@ padding: 1rem;
   z-index:-10;
 }
 .reverse-parallelogram {
-  margin-top:-58vh;
+  margin-top: -67vh;
   width: 25vw;
   height: 180rem;
-  transform:rotate(45deg);
+  transform: rotate(45deg);
   background: #e5e5e5;
-  overflow:none;
-  z-index:-10;
+  overflow: none;
+  z-index: -10;
 }
 .triangle-corner{
   width: 0;
@@ -246,3 +246,15 @@ padding: 1rem;
 
 }
 /* CODE RELATED SECTIONS END */
+
+@media screen and (max-width: 1600px) {
+  .reverse-parallelogram {
+    margin-top:-58vh;
+    width: 25vw;
+    height: 180rem;
+    transform:rotate(45deg);
+    background: #e5e5e5;
+    overflow:none;
+    z-index:-10;
+  }
+}
