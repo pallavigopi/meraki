@@ -117,7 +117,7 @@ padding: 1rem;
 
 /* BACKGROUND SHAPES */
 .parallelogram {
-  margin-top:-165vh;
+  margin-top:-100vh;
   width: 40vw;
   height: 220rem;
   transform:skew(60deg);
