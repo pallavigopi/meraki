@@ -54,6 +54,11 @@ $(document).ready(function(){
         1000);
   });
 
+  //dots in aboutpage
+  for (var i=0;i<16;i++) { 
+      $("#matrix").append("<div class='dot' style='width:"+ 7+"px; height:"+7+"px'></div>");
+ 
+ }
 
 });
 
@@ -81,4 +86,5 @@ function hideNav() {
   nav.classList.remove('active');
   navUl.classList.add('nav-toggle');
 }
+
 
