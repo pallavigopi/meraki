@@ -3,6 +3,7 @@ body{
   overflow-x: hidden;
   background: whitesmoke;
   color: #366669;
+  max-width: 100vw;
 }
 
 p{
@@ -356,7 +357,11 @@ padding: 1rem;
 
 }
 
+ /* change this code*/
 @media screen and (max-width: 600px) {
+  body{
+    width: 100vw;
+  }
 
  .matrix{
    width:15vh;
@@ -373,6 +378,40 @@ padding: 1rem;
   line-height: 1.8rem;
 }
 
+ .about-container{
+  display:grid;
+  grid-template-columns: none;
+  grid-column-gap: none;
+}
+
+.section-content{
+  padding: 10vw;
+}
+
+.image-container img{
+  width: 50vw;
+  height: auto;
+}
+
+.problem-container{
+  display:grid;
+  grid-template-columns: none;
+}
+
+.section-text{
+  padding: 20.5vw;
+  padding-top: 0vw;
+  padding-bottom: 0vw;
+}
+
+#eventFormatSection{
+  margin-top: 40vh;
+  margin-right:25vw; 
+}
+
+#eventFormatSection .matrix{
+  display: none;
+}
 
 }
 
