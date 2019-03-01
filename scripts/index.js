@@ -4,66 +4,73 @@ const nav = document.getElementsByClassName('nav')[0];
 const btn = document.getElementsByClassName('nav-tgl')[0];
 const navUl = document.getElementsByClassName('nav-toggle')[0];
 
-$(document).ready(function(){
-  $("#landing").click(function() {
+$(document).ready(function () {
+  $("#landing").click(function () {
     hideNav();
     $('html,body').animate({
-        scrollTop: $("#landingSection").offset().top},
-        1000);
+      scrollTop: $("#landingSection").offset().top
+    },
+      1000);
   });
 
-  $("#aboutUs").click(function() {
+  $("#aboutUs").click(function () {
     hideNav();
     $('html,body').animate({
-        scrollTop: $("#aboutUsSection").offset().top},
-        1000);
+      scrollTop: $("#aboutUsSection").offset().top
+    },
+      1000);
   });
 
-  $("#problemStatements").click(function() {
+  $("#problemStatements").click(function () {
     hideNav();
     $('html,body').animate({
-        scrollTop: $("#problemStatementsSection").offset().top},
-        1000);
+      scrollTop: $("#problemStatementsSection").offset().top
+    },
+      1000);
   });
 
-  $("#eventFormat").click(function() {
+  $("#eventFormat").click(function () {
     hideNav();
     $('html,body').animate({
-        scrollTop: $("#eventFormatSection").offset().top},
-        1000);
+      scrollTop: $("#eventFormatSection").offset().top
+    },
+      1000);
   });
 
-  $("#gallery").click(function() {
+  $("#gallery").click(function () {
     hideNav();
     $('html,body').animate({
-        scrollTop: $("#gallerySection").offset().top},
-        1000);
+      scrollTop: $("#gallerySection").offset().top
+    },
+      1000);
   });
 
-  $("#timeline").click(function() {
+  $("#timeline").click(function () {
     hideNav();
     $('html,body').animate({
-        scrollTop: $("#timelineSection").offset().top},
-        1000);
+      scrollTop: $("#timelineSection").offset().top
+    },
+      1000);
   });
 
-  $("#contact").click(function() {
+  $("#contact").click(function () {
     hideNav();
     $('html,body').animate({
-        scrollTop: $("#contactSection").offset().top},
-        1000);
+      scrollTop: $("#contactSection").offset().top
+    },
+      1000);
   });
 
   //dots in aboutpage
-  for (var i=0;i<16;i++) { 
-      $("#matrix").append("<div class='dot' style='width:"+ 7+"px; height:"+7+"px'></div>");
- 
- }
+  for (var i = 0; i < 16; i++) {
+    $("#matrix").append("<div class='dot' style='width:" + 7 + "px; height:" + 7 + "px'></div>");
+
+  }
 
 });
 
 
-btn.onclick = function(evt) {
+btn.onclick = function (evt) {
   if (!toggled) {
     showNav();
   } else {
@@ -75,9 +82,9 @@ function showNav() {
   toggled = true;
   btn.classList.add('toggled');
   nav.classList.add('active');
-  setTimeout(function() {
+  setTimeout(function () {
     navUl.classList.remove('nav-toggle');
-  },400)
+  }, 400)
 }
 
 function hideNav() {
@@ -88,3 +95,18 @@ function hideNav() {
 }
 
 
+// // gallery
+// var elem = document.querySelector('.main-carousel');
+// var flkty = new Flickity(elem, {
+//   // options
+//   cellAlign: 'left',
+//   contain: true
+// });
+
+// // element argument can be a selector string
+// //   for an individual element
+// var flkty = new Flickity('.main-carousel', {
+//   // options
+//   freeScroll: true,
+//   wrapAround: true
+// });
