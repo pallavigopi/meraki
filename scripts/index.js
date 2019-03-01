@@ -56,7 +56,7 @@ $(document).ready(function(){
 
   //dots in aboutpage
   for (var i=0;i<16;i++) { 
-      $("#matrix").append("<div class='dot' style='width:"+ 7+"px; height:"+7+"px'></div>");
+      $(".matrix").append("<div class='dot' style='width:"+ 7+"px; height:"+7+"px'></div>");
  
  }
 
