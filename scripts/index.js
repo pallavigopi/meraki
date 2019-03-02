@@ -11,7 +11,7 @@ $(document).ready(function(){
     // options
     contain: true,
     lazyLoad : 1,
-    cellAlign: 'left'
+    wrapAround: true
   });
 
   $("#landing").click(function() {
