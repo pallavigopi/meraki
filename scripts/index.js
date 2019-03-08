@@ -5,6 +5,15 @@ const btn = document.getElementsByClassName('nav-tgl')[0];
 const navUl = document.getElementsByClassName('nav-toggle')[0];
 
 $(document).ready(function(){
+
+  // initialize flickity
+  $('.main-carousel').flickity({
+    // options
+    contain: true,
+    lazyLoad : 1,
+    wrapAround: true
+  });
+
   $("#landing").click(function() {
     hideNav();
     $('html,body').animate({

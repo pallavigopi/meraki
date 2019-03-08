@@ -3,6 +3,7 @@ body{
   overflow-x: hidden;
   background: whitesmoke;
   color: #366669;
+  width: 100vw;
 }
 
 p{
@@ -288,6 +289,86 @@ padding: 1rem;
   padding-right:3em;
 
 }
+
+/* .main-carousel {
+  width: 80%;
+  height: 80vh;
+  background-color:#e5e5e5;
+  margin: 0 auto;
+}
+.carousel-cell {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-cell img {
+  width: 80%;
+  height: 100%;
+  margin-left: 10%;
+} */
+
+.main-carousel {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.carousel-cell {
+  width: 80%;
+  height: 80vh;
+  margin: 0 20px;
+}
+
+.carousel-cell img {
+  height: 100%;
+  width: 100%;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+}
+
+#contactSection .section-content {
+  text-align: center;
+}
+
+.contact-card{
+  text-align: left;
+  display: inline-block;
+  margin: 30px auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+.contact-card p{
+  margin-bottom: 0rem;
+}
+
+.contact-img{
+  width: 150px;
+  height: auto;
+  vertical-align: middle;
+  margin: 0px 20px;
+  border-style: solid;
+  border-width: 0px;
+  border-radius: 50%;
+}
+
+.contact-dets{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.contact-mail, .contact-tel{
+  text-decoration: none;
+  color: inherit;
+  transition: 0.5s;
+}
+
+.contact-mail:hover, .contact-tel:hover{
+  color: #007bff;
+  text-decoration: none;
+}
 /* CODE RELATED SECTIONS END */
 
 @media screen and (max-width: 1600px) {
@@ -298,13 +379,61 @@ padding: 1rem;
 
 }
 
+ /* change this code*/
 @media screen and (max-width: 600px) {
+  body{
+    width: 100vw;
+  }
 
  .matrix{
    width:15vh;
    height: 15vh;
  }
 
+ .contact-card{
+  margin: 30px auto;
+  width: 100%;
+}
+
+.contact-card p{
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+
+ .about-container{
+  display:grid;
+  grid-template-columns: none;
+  grid-column-gap: none;
+}
+
+.section-content{
+  padding: 10vw;
+}
+
+.image-container img{
+  width: 50vw;
+  height: auto;
+}
+
+.problem-container{
+  display:grid;
+  grid-template-columns: none;
+}
+
+.section-text{
+  padding: 20.5vw;
+  padding-top: 0vw;
+  padding-bottom: 0vw;
+}
+
+#eventFormatSection{
+  margin-top: 40vh;
+  margin-right:25vw; 
+}
+
+#eventFormatSection .matrix{
+  display: none;
+}
 
 }
 
