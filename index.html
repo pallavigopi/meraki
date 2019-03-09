@@ -33,13 +33,13 @@
                     <button class="nav-tgl" type="button" aria-label="toggle menu"><!-- this span just for the three dividers in the hamburger button--><span aria-hidden="true"></span></button>
                     <nav class="nav">
                         <ul class="nav-toggle nav-ul">
-                            <li id="landing">Landing</li>
-                            <li id="aboutUs">About Us</li>
-                            <li id="problemStatements">Problem Statements</li>
-                            <li id="eventFormat">Event Formats</li>
-                            <li id="gallery">Gallery</li>
-                            <li id="timeline">TimeLine</li>
-                            <li id="contact">Contact</li>
+                            <li id="landing" onclick="scrollToSection(this.id, 0)">Landing</li>
+                            <li id="aboutUs" onclick="scrollToSection(this.id, 1)">About Us</li>
+                            <li id="problemStatements" onclick="scrollToSection(this.id, 2)">Problem Statements</li>
+                            <li id="eventFormat" onclick="scrollToSection(this.id, 3)">Event Formats</li>
+                            <li id="gallery" onclick="scrollToSection(this.id, 4)">Gallery</li>
+                            <li id="timeline" onclick="scrollToSection(this.id, 5)">TimeLine</li>
+                            <li id="contact" onclick="scrollToSection(this.id, 6)">Contact</li>
                         </ul>
                     </nav>
                     <div id="bufferspace"  style="height: 100vh"></div>
@@ -74,7 +74,7 @@
                     </div>
 
                     <!--PROBLEM STATEMENTS -->
-                    <div id="problemStatementsSection" class="section section-1">
+                    <div id="problemStatementsSection" class="section section-2">
                         <div class="section-content problem-container">
                                 <div class="image-container">
                                         <img src="/img/test.svg"/>
@@ -96,7 +96,7 @@
                     </div>
 
                     <!-- EVENT FORMAT -->
-                    <div id="eventFormatSection" class="section section-1">
+                    <div id="eventFormatSection" class="section section-3">
                         <div class="matrix"></div>
                         <div class="section-content center-text">
                             <h1>Event Format</h1>
@@ -105,7 +105,7 @@
                         </div>
                     </div>
         
-                    <div id="gallerySection" class="section section-1">
+                    <div id="gallerySection" class="section section-4">
                         <div class="section-content main-carousel">
                                 <div class="carousel-cell"><img class="carousel-cell-image" data-flickity-lazyload="https://www.w3schools.com/howto/img_forest.jpg"/></div>
                                 <div class="carousel-cell"><img class="carousel-cell-image" data-flickity-lazyload="https://www.gettyimages.com/gi-resources/images/500px/983794168.jpg"/></div>
@@ -113,13 +113,13 @@
                         </div>
                     </div>
                             
-                    <div id="timelineSection" class="section section-1" style="background-color: rgb(19, 51, 61)">
+                    <div id="timelineSection" class="section section-5" style="background-color: rgb(19, 51, 61)">
                         <div class="section-content">
                             timeline page
                         </div>
                     </div>
         
-                    <div id="contactSection" class="section section-1">
+                    <div id="contactSection" class="section section-6">
                         <div class="section-content">
                             <h1>Contact</h1>
 						    <br>
@@ -173,6 +173,7 @@
             </div>
         </div>
     <!-- Javascript -->
+    <script src="scripts/fullpage.js?v=1.0"></script>
     <script src="scripts/index.js?v=1.0"></script>
 </body>
 
