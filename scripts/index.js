@@ -34,13 +34,6 @@ if(!isMobile.any()){
 }
 
 $(document).ready(function(){
-  // initialize flickity
-  $('.main-carousel').flickity({
-    // options
-    contain: true,
-    lazyLoad : 1,
-    wrapAround: true
-  });
 
   //dots in aboutpage
   for (var i=0;i<16;i++) { 
