@@ -18,16 +18,11 @@ class FullPage{
             1000);
     }
 
-    moveToSection(x){
-        var x1 = (x-1)%this.sectionsCount;
-        if(x1>this.section){
-            this.nextSection();
-            this.moveToSection(x);
-        }
-        else if(x1<this.section){
-            this.prevSection();
-            this.moveToSection(x);
-        }
+    moveToSection(e, sectionNumber){
+        $('html,body').animate({
+            scrollTop: $("#"+e+"Section").offset().top},
+            1000);
+        this.sectionsCount = sectionNumber;
     }
 
     setTransition(str, func){
@@ -41,7 +36,7 @@ class FullPage{
         this.scrollDelay = duration;
         this.sectionsContainer = this.fullpage.find("#sections-container");
         this.sectionsCount = $('.section').length;
-        console.log(this.sectionsCount);
+        
         this.transitionArray = {};
         for(var i=0 ; i<this.sectionsCount ; i++){
             if(i!=0)
