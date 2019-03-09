@@ -328,9 +328,13 @@ padding: 1rem;
   display: block;
 }
 
+
 #contactSection .section-content {
   text-align: center;
+  margin-top:-2em;
+  padding:0;
 }
+
 
 .contact-card{
   text-align: left;
@@ -345,7 +349,7 @@ padding: 1rem;
 }
 
 .contact-img{
-  width: 150px;
+  width: 200px;
   height: auto;
   vertical-align: middle;
   margin: 0px 20px;
@@ -357,6 +361,8 @@ padding: 1rem;
 .contact-dets{
   display: inline-block;
   vertical-align: middle;
+  line-height: 1;
+  font-size: 1.25rem;
 }
 
 .contact-mail, .contact-tel{
