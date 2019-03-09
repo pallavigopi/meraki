@@ -1,41 +1,12 @@
 class FullPage{
 
-    nextSection() {
-        if(this.section == this.sectionsCount-1)
-            return;
-        this.section++;
-        $('html,body').animate({
-            scrollTop: $(".section-"+this.section).first().offset().top},
-            1000);
-    }
-
-    prevSection() {
-        if(this.section == 0)
-            return;
-        this.section--;
-        $('html,body').animate({
-            scrollTop: $(".section-"+this.section).first().offset().top},
-            1000);
-    }
-
-    moveToSection(e, sectionNumber){
-        $('html,body').animate({
-            scrollTop: $("#"+e+"Section").offset().top},
-            1000);
-        this.sectionsCount = sectionNumber;
-    }
-
-    setTransition(str, func){
-        this.transitionArray[str]=func;
-    }
-
     constructor(element, duration){   
         this.section = 0;
         this.scroll = true;
         this.fullpage = element;
         this.scrollDelay = duration;
         this.sectionsContainer = this.fullpage.find("#sections-container");
-        this.sectionsCount = $('.section').length;
+        this.sectionsCount = document.getElementsByClassName('section').length;
         
         this.transitionArray = {};
         for(var i=0 ; i<this.sectionsCount ; i++){
@@ -85,4 +56,35 @@ class FullPage{
                 fullpageObj.prevSection();
         });
     }
-}
+
+    nextSection() {
+        if(this.section == this.sectionsCount-1) {
+            return;
+        }
+        this.section++;
+        $('html,body').animate({
+            scrollTop: $(".section-"+this.section).first().offset().top},
+            1000);
+    }
+
+    prevSection() {
+        if(this.section == 0)
+            return;
+        this.section--;
+        $('html,body').animate({
+            scrollTop: $(".section-"+this.section).first().offset().top},
+            1000);
+    }
+
+    moveToSection(e, sectionNumber){
+        $('html,body').animate({
+            scrollTop: $("#"+e+"Section").offset().top},
+            1000);
+        this.section = sectionNumber;
+    }
+
+    setTransition(str, func){
+        this.transitionArray[str]=func;
+    }
+
+    }

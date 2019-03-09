@@ -26,6 +26,13 @@ const nav = document.getElementsByClassName('nav')[0];
 const btn = document.getElementsByClassName('nav-tgl')[0];
 const navUl = document.getElementsByClassName('nav-toggle')[0];
 
+var fullpage = $("#fullpage");
+var delay = 500;
+if(!isMobile.any()){
+  var fullpageObj = new FullPage(fullpage, delay);        //FullPage object.... Add all transition functions to this object
+  console.log('testing');
+}
+
 $(document).ready(function(){
   // initialize flickity
   $('.main-carousel').flickity({
@@ -34,7 +41,7 @@ $(document).ready(function(){
     lazyLoad : 1,
     wrapAround: true
   });
-  
+
   //dots in aboutpage
   for (var i=0;i<16;i++) { 
       $(".matrix").append("<div class='dot' style='width:"+ 7+"px; height:"+7+"px'></div>"); 
@@ -65,15 +72,6 @@ function hideNav() {
   btn.classList.remove('toggled');
   nav.classList.remove('active');
   navUl.classList.add('nav-toggle');
-}
-
-// Code for scrolling effects
-
-var fullpage = $("#fullpage");
-var delay = 500;
-if(!isMobile.any()){
-  var fullpageObj = new FullPage(fullpage, delay);        //FullPage object.... Add all transition functions to this object
-  console.log('testing');
 }
 
 function scrollToSection(e, sectionNumber) {
