@@ -161,7 +161,8 @@ padding: 1rem;
 
 /* CODE RELATED TO THE SECTIONS*/
 .section {
-  height: 100vh;
+  min-height:100vh;
+  height: auto;
   padding-top: 3em;
 }
 .content{
