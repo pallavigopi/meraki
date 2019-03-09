@@ -289,6 +289,13 @@ padding: 1rem;
 
 }
 
+.rewards-container{
+  display:grid;
+  grid-template-columns: 50% 40%;
+  grid-column-gap: 5vw;
+  padding-left: 5vw;
+}
+
 #contactSection .section-content {
   text-align: center;
   margin-top:-2em;
@@ -382,6 +389,11 @@ padding: 1rem;
 }
 
 .problem-container{
+  display:grid;
+  grid-template-columns: none;
+}
+
+.rewards-container{
   display:grid;
   grid-template-columns: none;
 }

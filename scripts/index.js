@@ -1,4 +1,12 @@
 
+
+// TO MAKE ANIMATION WORK PROPERLY UNCOMMENT THIS IN THE END
+/*
+window.onload = function() {
+  scrollToSection('landing',0);
+}
+*/
+
 var isMobile = {
   Android: function() {
           return navigator.userAgent.match(/Android/i);
