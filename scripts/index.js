@@ -74,7 +74,7 @@ function showNav() {
   nav.classList.add('active');
   setTimeout(function() {
     navUl.classList.remove('nav-toggle');
-  },400)
+  },300)
 }
 
 function hideNav() {
