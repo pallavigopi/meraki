@@ -19,9 +19,11 @@ class FullPage{
         this.finVerticalTouch = 0;
         var fullpageObj = this;
 
+        /*
         fullpage.bind('touchstart', function(e){
             fullpageObj.initVerticalTouch = e.originalEvent.touches[0].screenY;
-        });
+         });
+        */
 
         fullpage.bind('touchmove', function(e){
             fullpageObj.finVerticalTouch = e.originalEvent.touches[0].screenY;

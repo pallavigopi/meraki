@@ -9,18 +9,23 @@ window.onload = function() {
 
 var isMobile = {
   Android: function() {
+          console.log('android');
           return navigator.userAgent.match(/Android/i);
   },
   BlackBerry: function() {
+          console.log('blackberry');
           return navigator.userAgent.match(/BlackBerry/i);
   },
   iOS: function() {
+          console.log('ios');
           return navigator.userAgent.match(/iPhone|iPad|iPod/i);
   },
   Opera: function() {
+          console.log('opera');
           return navigator.userAgent.match(/Opera Mini/i);
   },
   Windows: function() {
+          console.log('windows');
           return navigator.userAgent.match(/IEMobile/i);
   },
   any: function() {
@@ -39,6 +44,10 @@ var delay = 500;
 if(!isMobile.any()){
   var fullpageObj = new FullPage(fullpage, delay);        //FullPage object.... Add all transition functions to this object
   console.log('testing');
+}
+else {
+  var fullpageObj = new FullPage(fullpage, delay);
+  console.log('running mobile');
 }
 
 $(document).ready(function(){
