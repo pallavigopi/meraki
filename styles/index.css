@@ -135,6 +135,7 @@ padding: 1rem;
     background: white;
     overflow: none;
     z-index: -10;
+    overflow-x:hidden;
 }
 .reverse-parallelogram {
   margin-top: -67vh;
@@ -161,6 +162,12 @@ padding: 1rem;
   min-height:100vh;
   height: auto;
   padding-top: 3em;
+}
+
+#bufferspace{
+  max-width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
 }
 
 .content{
@@ -564,6 +571,27 @@ footer {
 }
 
 @media only screen and (max-width:450px){
+  body{
+    max-width: 100vw;
+    overflow-x: hidden;
+    width: 100vw;
+  }
+
+  #fullpage,#sections-container,#landingSection{
+    max-width: 100vw;
+    overflow-x: hidden;
+    width: 100vw;
+  }
+
+  .nav-tgl {
+    right: initial;
+    left: 80vw;
+  }
+  
+  .triangle-small-p-bottom{
+    display:none;
+  }
+
 	.event-container{
 		grid-template-columns: auto;
 		margin: 0vh 25vw;
@@ -619,6 +647,8 @@ footer {
     margin-top: 0vh;
     margin-left: 25vw; 
     height: auto;
+    max-width: 100vw;
+    width: auto;
   }
 
   .about-container > .image-container img{
