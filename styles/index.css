@@ -594,8 +594,13 @@ footer {
   .nav-ul{
     padding-left: 5vw;
     font-size: 1.75rem;
-    padding-top: 15vh;
+    padding-top: 7.5rem;
   }
+  
+  .nav-ul li{
+    padding: 10px;
+  }
+
 
   .triangle-small-p-bottom{
     display:none;
