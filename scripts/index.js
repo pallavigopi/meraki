@@ -1,5 +1,3 @@
-
-
 // TO MAKE ANIMATION WORK PROPERLY UNCOMMENT THIS IN THE END
 /*
 window.onload = function() {
@@ -92,3 +90,4 @@ function scrollToSection(e, sectionNumber) {
 $(".section-arrow").click(()=>{
   fullpageObj.nextSection();
 });
+
