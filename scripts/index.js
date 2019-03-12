@@ -1,5 +1,3 @@
-
-
 // TO MAKE ANIMATION WORK PROPERLY UNCOMMENT THIS IN THE END
 /*
 window.onload = function() {
@@ -84,6 +82,11 @@ function hideNav() {
   navUl.classList.add('nav-toggle');
 }
 
+// function animateSection(sectionNum) {
+//   console.log(sectionNum);
+//   TweenMax.staggerFrom(".animate"+sectionNum,1,{y: 200, opacity: 0, delay: 0.5},0.4);
+// }
+
 function scrollToSection(e, sectionNumber) {
   hideNav();
   fullpageObj.moveToSection(e, sectionNumber);
@@ -92,3 +95,4 @@ function scrollToSection(e, sectionNumber) {
 $(".section-arrow").click(()=>{
   fullpageObj.nextSection();
 });
+
