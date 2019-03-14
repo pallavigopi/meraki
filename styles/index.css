@@ -186,7 +186,7 @@ padding: 1rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
-} /* used to postion the content over the bg*/
+/* used to postion the content over the bg*/
 
 .shift-right{   /*not used */
   left:40%;
