@@ -57,6 +57,7 @@ class FullPage{
         this.finVerticalTouch = 0;
         var fullpageObj = this;
 
+        /*
         fullpage.bind('touchstart', function(e){
             fullpageObj.initVerticalTouch = e.originalEvent.touches[0].screenY;
          });
@@ -73,6 +74,8 @@ class FullPage{
                 fullpageObj.nextSection();
             fullpageObj.initVerticalTouch = fullpageObj.finVerticalTouch = 0;
         });
+
+        */
 
         $(window).bind('wheel', function(e){
             if(!fullpageObj.scroll)
