@@ -703,6 +703,7 @@ footer {
     margin-left: 0vw;
     margin-top: 0px;
     height: auto;
+    display: none;
   }
   .problem-container > .image-container img{
     width: 80px;
