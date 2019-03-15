@@ -705,9 +705,7 @@ footer {
     height: auto;
     display: none;
   }
-  .problem-container > .image-container img{
-    width: 80px;
-  }
+  
   
   .rewards-container{
     display:grid;
