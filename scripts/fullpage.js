@@ -2,7 +2,10 @@ class FullPage{
 
     animateSection(sectionNum) {
         console.log(sectionNum);
-        TweenMax.staggerFrom(".animate"+sectionNum,1,{y: 200, opacity: 0, delay: 0.5},0.4);
+        if(sectionNum%2==0)
+            TweenMax.staggerFrom(".animate"+sectionNum,1,{ease: Power2.easeIn, opacity: 0, delay: 0.7});
+        else
+            TweenMax.staggerFrom(".animate"+sectionNum,1,{ease: Power2.easeIn, opacity: 0, delay: 0.7});
     }
 
     nextSection() {
@@ -23,8 +26,8 @@ class FullPage{
         $('html,body').animate({
             scrollTop: $(".section-"+this.section).first().offset().top},
             1000);
-        if(!this.section==7)
-        this.animateSection(this.section);
+        if(this.section != 6)
+            this.animateSection(this.section);
     }
 
     moveToSection(e, sectionNumber){

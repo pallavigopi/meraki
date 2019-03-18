@@ -77,9 +77,11 @@ function showNav() {
 
 function hideNav() {
   toggled = false;
-  btn.classList.remove('toggled');
   nav.classList.remove('active');
-  navUl.classList.add('nav-toggle');
+  btn.classList.remove('toggled');
+  setTimeout(function() {
+    navUl.classList.add('nav-toggle');
+  },250)
 }
 
 // function animateSection(sectionNum) {
