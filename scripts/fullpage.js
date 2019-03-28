@@ -3,9 +3,10 @@ class FullPage{
     animateSection(sectionNum) {
         console.log(sectionNum);
         if(sectionNum%2==0)
-            TweenMax.staggerFrom(".animate"+sectionNum,1,{ease: Power2.easeIn, opacity: 0, delay: 0.7});
+            TweenMax.staggerFrom(".animate"+sectionNum,0.7,{ease: Power2.easeIn, opacity: 0, delay: 0.7});
         else
-            TweenMax.staggerFrom(".animate"+sectionNum,1,{ease: Power2.easeIn, opacity: 0, delay: 0.7});
+            TweenMax.staggerFrom(".animate"+sectionNum,0.8,{y:200, opacity: 0, delay: 0.9});
+
     }
 
     nextSection() {
