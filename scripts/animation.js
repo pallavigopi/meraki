@@ -1,7 +1,5 @@
 $(document).ready(function(){
    let i,circle=[];
-    setTimeout(myFunction, 000);
-    function myFunction() {
           for(i=0;i<300;i+=1){
               circle[i] = $('<div id="d'+i+'"><div id="c'+i+'" class="wing"></div></div>'); 
               $('#butterfly').append(circle[i]);
@@ -11,7 +9,6 @@ $(document).ready(function(){
                            });
               $("#c"+i).css({"animation": "wings 0.5s linear "+i/100+"s infinite",});
           }
-    }
   setTimeout(del, 8000);
  function del() { circle=[]; }
   setTimeout(one1, 0);
