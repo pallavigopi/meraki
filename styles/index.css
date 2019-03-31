@@ -125,6 +125,7 @@ padding: 1rem;
   transition: all 500ms ease-in-out;
   clip-path: circle(30px at calc(100% - 65px) 65px);
   visibility: hidden;
+  z-index: 5;
 }
 
 .active.nav:before {
@@ -195,13 +196,41 @@ padding: 1rem;
 } /* to move the content to the right side*/
 
 .problem-container{
-  margin-top: 5vh;
+  margin-top: 15vh;
   display:grid;
   grid-template-columns: 40% 50%;
+  font-size:1.5rem;
 }
-.problem-container .section-text{
-  margin-top: 5vh;
+
+.problem-container ul{
+  list-style: initial;
 }
+
+/*button in problem statement */
+.button a{
+   display:inline-block;
+   padding:0.3em 1.2em;
+   margin:0 0.1em 0.1em 0;
+   border:0.16em solid rgba(255,255,255,0);
+   border-radius:2em;
+   box-sizing: border-box;
+   text-decoration:none;
+   font-weight:300;
+   color:#FFFFFF;
+   text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+   text-align:center;
+   transition: all 0.2s;
+  }
+  .button a:hover{
+   border-color: rgba(255,255,255,1);
+  }
+  @media all and (max-width:30em){
+   .button a{
+    display:block;
+    margin:0.2em auto;
+   }
+  } 
+/* buttons end here */
 .about-container{
   display:grid;
   grid-template-columns: 40% 40%;
@@ -215,9 +244,8 @@ padding: 1rem;
     
 }
 .image-container {
-  height:50vh;
+  height:40vh;
   width:50vh;
-  margin-top:10vh;
   margin-left:5vw;
   
 }

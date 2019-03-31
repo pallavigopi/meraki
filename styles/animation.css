@@ -36,7 +36,7 @@ html, body{
   position:absolute;
   opacity:0;
   visibility:hidden;
-  margin-top:14vh;
+  margin-top:20vh;
   margin-left:50%;
   width: 200px;
   height: 200px;
@@ -78,7 +78,7 @@ html, body{
 #ripple{
  visibility:hidden;
  position:absolute; 
- margin:20% 0px 0px 50%;
+ margin:20vh 0px 0px 50%;
  animation:fade 5s ease 15s 1;
 }
 .ripple{
