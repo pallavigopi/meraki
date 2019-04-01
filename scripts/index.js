@@ -1,9 +1,7 @@
 // TO MAKE ANIMATION WORK PROPERLY UNCOMMENT THIS IN THE END
-/*
 window.onload = function() {
   scrollToSection('landing',0);
 }
-*/
 
 var isMobile = {
   Android: function() {
@@ -72,7 +70,7 @@ function showNav() {
   nav.classList.add('active');
   setTimeout(function() {
     navUl.classList.remove('nav-toggle');
-  },300)
+  },270)
 }
 
 function hideNav() {
@@ -81,7 +79,7 @@ function hideNav() {
   btn.classList.remove('toggled');
   setTimeout(function() {
     navUl.classList.add('nav-toggle');
-  },250)
+  },220)
 }
 
 // function animateSection(sectionNum) {

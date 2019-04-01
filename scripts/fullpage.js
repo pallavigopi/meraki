@@ -36,6 +36,7 @@ class FullPage{
             scrollTop: $("#"+e+"Section").offset().top},
             1000);
         this.section = sectionNumber;
+        this.animateSection(this.section);
     }
 
     setTransition(str, func){
@@ -70,6 +71,8 @@ class FullPage{
             fullpageObj.finVerticalTouch = e.originalEvent.touches[0].screenY;
         });
 
+        */
+
         fullpage.bind('touchend', function(e){
             var delta = fullpageObj.finVerticalTouch - fullpageObj.initVerticalTouch;
             if(delta > 100)
@@ -78,8 +81,6 @@ class FullPage{
                 fullpageObj.nextSection();
             fullpageObj.initVerticalTouch = fullpageObj.finVerticalTouch = 0;
         });
-
-        */
 
         $(window).bind('wheel', function(e){
             if(!fullpageObj.scroll)
