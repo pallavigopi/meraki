@@ -809,6 +809,7 @@ footer {
   
   #eventFormatSection .event-container{
     margin: 0vh 10vw;
+    display: block;
   }
 
   #eventFormatSection .event-card{
