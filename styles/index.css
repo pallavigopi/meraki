@@ -228,8 +228,6 @@ padding: 1rem;
   list-style: initial;
 }
 
-<<<<<<< HEAD
-=======
 /*button in problem statement */
 .button  {
   background-color: #4CAF50; /* Green */
@@ -250,7 +248,6 @@ padding: 1rem;
   transform: scale(1);
 }
 /* buttons end here */
->>>>>>> Landingpage
 .about-container{
   display:grid;
   grid-template-columns: 40% 40%;

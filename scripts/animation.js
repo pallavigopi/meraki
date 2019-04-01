@@ -1,10 +1,6 @@
 $(document).ready(function(){
    let i,circle=[];
-<<<<<<< HEAD
-          for(i=0;i<100;i+=1){
-=======
           for(i=0;i<300;i+=1){
->>>>>>> Landingpage
               circle[i] = $('<div id="d'+i+'"><div id="c'+i+'" class="wing"></div></div>'); 
               $('#butterfly').append(circle[i]);
               $("#d"+i).css({"animation":"fly 5s linear "+i/100+"s 1",
