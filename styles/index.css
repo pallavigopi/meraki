@@ -298,16 +298,16 @@ padding: 1rem;
     height: 0;
     border-left: 90px solid transparent;
     border-right: 0px solid transparent;
-    border-bottom: 100px solid rgb(243, 182, 14);
-    /* border-bottom: 100px solid  rgb(214, 75, 161);*/
+    /*border-bottom: 100px solid rgb(243, 182, 14);*/
+    border-bottom: 100px solid  rgb(214, 75, 161);
 }
 .triangle-small-p-bottom{
     width: 0;
     height: 0;
     border-left: 90px solid transparent;
     border-right: 0px solid transparent;
-    border-bottom: 100px solid rgb(243, 182, 14);
-    /* border-bottom: 100px solid  rgb(214, 75, 161);*/
+    /*border-bottom: 100px solid rgb(243, 182, 14);*/
+    border-bottom: 100px solid  rgb(214, 75, 161);
     opacity: 0.5 ;
     z-index:-5;
 }
