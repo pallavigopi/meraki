@@ -8,9 +8,27 @@ body{
   font-weight: 400;
 }
 
+@font-face { 
+  font-family: 'bebas'; 
+  font-weight: bold; 
+  src: url('../BebasNeue-Bold.ttf');
+}
+
+@font-face { 
+  font-family: 'aileron'; 
+  font-weight: bold; 
+  src: url('../Aileron-Bold.otf');
+}
+
+@font-face { 
+  font-family: 'bavro'; 
+  font-weight: bold; 
+  src: url('../Bavro-Regular.ttf');
+}
+
 h1{
-  font-family: 'Karla', sans-serif;
-  font-weight: bold;
+  font-family: 'aileron';
+  /*font-weight: bold;*/
   font-size: 4.5rem;
   margin-top: 0vh;
   color: #1c1e29;
@@ -38,8 +56,8 @@ p{
   list-style: none;
   font-size: 2.5rem;
   cursor: pointer;
-  font-family: 'Karla', sans-serif;
-  font-weight: bold;
+  font-family: 'aileron';
+  /*font-weight: bold;*/
   width: 60vw;
 }
 
@@ -368,7 +386,7 @@ padding: 1rem;
 
 #contactSection .section-content {
   text-align: center;
-  margin-top:-2em;
+  /*margin-top:-2em;*/
   padding:0;
 }
 
@@ -619,6 +637,25 @@ footer {
     transform: skew(50deg);
   }
 
+}
+
+@media screen and (max-width: 1350px) {
+  .event-container {
+    margin: -17vh 7vw;
+    grid-template-columns: auto auto auto;
+    z-index: 2;
+    display: -webkit-inline-box;
+}
+.event-card {
+  position: relative;
+  height: 28vw;
+  width: 28vw;
+  background-color: goldenrod;
+  border-radius: 10px;
+  z-index: 0;
+  transform: scale(0.95);
+  transition: box-shadow 0.5s, transform 0.5s;
+}
 }
 
  /* change this code*/
