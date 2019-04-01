@@ -218,7 +218,7 @@ padding: 1rem;
 } /* to move the content to the right side*/
 
 .problem-container{
-  margin-top: 15vh;
+  margin-top: 7vh;
   display:grid;
   grid-template-columns: 40% 50%;
   font-size:1.5rem;
@@ -268,8 +268,8 @@ padding: 1rem;
   
 }
 .image-container img{
-  width:100%;
-  height:100%;
+  width:80%;
+  height:80%;
 }
 
 .rewards-container > .image-container{
