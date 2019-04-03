@@ -665,6 +665,7 @@ footer {
     grid-template-areas: "ibeto . . . excel" ". icon1 icon2 icon3 ." ". brand brand brand .";
     height: 150px;
     padding-top: 15px;
+    font-size: 12px;
   }
   .footerDiv img{
     height: 42px;
