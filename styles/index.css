@@ -553,7 +553,7 @@ footer {
   width: 100%;
   height:20vh;
   /*padding: 10px;*/
-  padding-top: 3em;
+  padding-top: 1em;
   background-color: #333;
   display: grid;
   grid-template-areas: "ibeto icon1 icon2 icon3 excel" ". brand brand brand .";
@@ -637,8 +637,6 @@ footer {
   /* background-color: brown; */
   display: grid;
   text-align: center;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: bold;
 }
 
 .Excelbrand span {
