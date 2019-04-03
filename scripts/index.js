@@ -29,6 +29,8 @@ var isMobile = {
   }
 };
 
+var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
 // nav-bar
 let toggled = false;
 const nav = document.getElementsByClassName('nav')[0];
@@ -38,11 +40,11 @@ const navUl = document.getElementsByClassName('nav-toggle')[0];
 var fullpage = $("#fullpage");
 var delay = 500;
 if(!isMobile.any()){
-  var fullpageObj = new FullPage(fullpage, delay);        //FullPage object.... Add all transition functions to this object
+  var fullpageObj = new FullPage(fullpage, delay, isSafari);        //FullPage object.... Add all transition functions to this object
   console.log('testing');
 }
 else {
-  var fullpageObj = new FullPage(fullpage, delay);
+  var fullpageObj = new FullPage(fullpage, delay, isSafari);
   console.log('running mobile');
 }
 

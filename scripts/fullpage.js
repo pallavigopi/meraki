@@ -2,10 +2,15 @@ class FullPage{
 
     animateSection(sectionNum) {
         console.log(sectionNum);
-        if(sectionNum%2==0)
-            TweenMax.staggerFrom(".animate"+sectionNum,0.7,{ease: Power2.easeIn, opacity: 0, delay: 0.7});
-        else
-            TweenMax.staggerFrom(".animate"+sectionNum,0.8,{y:200, opacity: 0, delay: 0.9});
+        if(sectionNum==4) {
+            TweenMax.staggerFrom(".animate"+sectionNum,0.6,{ease: Power2.easeIn, opacity: 0, delay: 0.3});
+        }
+        else if(sectionNum%2==0) {
+            TweenMax.staggerFrom(".animate"+sectionNum,0.6,{ease: Power2.easeIn, opacity: 0, delay: 0.7});
+        }
+        else {
+            TweenMax.staggerFrom(".animate"+sectionNum,0.7,{y:200, opacity: 0, delay: 0.9});
+        }
 
     }
 
@@ -43,13 +48,14 @@ class FullPage{
         this.transitionArray[str]=func;
     }
 
-    constructor(element, duration){   
+    constructor(element, duration, isSafari){   
         this.section = 0;
         this.scroll = true;
         this.fullpage = element;
         this.scrollDelay = duration;
         this.sectionsContainer = this.fullpage.find("#sections-container");
         this.sectionsCount = document.getElementsByClassName('section').length;
+        this.safari = isSafari;
         
         this.transitionArray = {};
         for(var i=0 ; i<this.sectionsCount ; i++){
@@ -83,23 +89,27 @@ class FullPage{
         });
 
         $(window).bind('wheel', function(e){
-            if(!fullpageObj.scroll)
-                return;
-            fullpageObj.scroll = false;
-            setTimeout(function(){ fullpageObj.scroll = true }, fullpageObj.scrollDelay);
-            if(e.originalEvent.deltaY > 0) {
-                fullpageObj.nextSection();
-            } else if(e.originalEvent.deltaY < 0) {
-                fullpageObj.prevSection();
+            if(!this.safari) {
+                if(!fullpageObj.scroll)
+                    return;
+                fullpageObj.scroll = false;
+                setTimeout(function(){ fullpageObj.scroll = true }, fullpageObj.scrollDelay);
+                if(e.originalEvent.deltaY > 0) {
+                    fullpageObj.nextSection();
+                } else if(e.originalEvent.deltaY < 0) {
+                    fullpageObj.prevSection();
+                }
             }
         });
 
         console.log("working");
         $(document).bind("keydown", function(e){
-            if(e.keyCode==40 || e.keyCode==34)
-                fullpageObj.nextSection();
-            else if(e.keyCode==38 || e.keyCode==33)
-                fullpageObj.prevSection();
+            if(!this.safari) {
+                if(e.keyCode==40 || e.keyCode==34)
+                    fullpageObj.nextSection();
+                else if(e.keyCode==38 || e.keyCode==33)
+                    fullpageObj.prevSection();
+            }
         });
     }
 
