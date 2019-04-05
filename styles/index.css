@@ -51,10 +51,10 @@ p{
   left: 0;
   z-index: 100;
   color: white;
-  padding-top: 1.5rem;
+  padding-top: 1.25rem;
   padding-left: 5rem;
   list-style: none;
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   cursor: pointer;
   font-family: 'aileron';
   /*font-weight: bold;*/
@@ -247,6 +247,8 @@ padding: 1rem;
 .button:hover {
   transform: scale(1);
 }
+
+
 /* buttons end here */
 .about-container{
   display:grid;
