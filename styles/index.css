@@ -398,6 +398,12 @@ padding: 1rem;
   display: inline-block;
 }
 
+#ibetoJuniorSection h2{
+  margin-top:-2vh;
+  color:rgb(128, 123, 123);
+}
+
+
 #contactSection .section-content {
   text-align: center;
   /*margin-top:-2em;*/
@@ -828,6 +834,9 @@ footer {
  .rewards-container >.section-text{
    padding-left: 0vw;
  }
+ #ibetoJuniorSection .section-content{
+  margin-top:2vh;
+}
 }
 
 @media only screen and (max-width:500px){
@@ -1030,6 +1039,14 @@ footer {
 /* Event Format ends*/
 
 /* timeline */
+#timelineSection h1{
+  margin-bottom:0.5vw;
+}
+
+#timelineSection img{
+  padding-left:25vw;
+  height:85vh;
+}
 .timeline-container {
   display: none;
   width: 80%;
@@ -1107,6 +1124,9 @@ footer {
 
 
 @media screen and (max-width: 768px) {
+  #timelineSection img{
+    display: none;
+  }
   .timeline-container{
     display: block;
   }
