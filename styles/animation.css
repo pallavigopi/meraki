@@ -3,7 +3,6 @@ html, body{
   height:100%;
   margin:0px;
   overflow: hidden;
-
 }
 .absolute{position:absolute;}
 #all{position:relative;}
@@ -43,7 +42,6 @@ html, body{
   margin-left:-10vh;
   margin-top:-20vh;
 }
-#excel{ margin-left:-20vh;} 
 .city_wrap{
   transform:scale(1);
   margin-left:50%;
@@ -117,6 +115,12 @@ html, body{
 #citym2{animation:sideb 10s linear 17s infinite; filter:brightness(0.7);}
 #citym3{animation:sidec 10s linear 17s infinite; filter:brightness(0.7);}
 #citym4{animation:sided 10s linear 17s infinite; filter:brightness(0.7);}
+@media only screen and (max-width: 600px) {
+.city_wrap{
+  transform:scale(0.5);
+  margin-left:50%;
+}
+}
 @-webkit-keyframes fill{
   0%   {stroke-dashoffset:200; stroke-dasharray:00; }
   100% {stroke-dashoffset:0; stroke-dasharray:5000; }
@@ -139,6 +143,22 @@ html, body{
   stroke-width:5;
   margin-left:-400px;
   animation:appear 3s ease 7s 1;
+}
+@media only screen and (max-width: 600px) {
+#box_wrap{
+  transform:scale(0.5);
+  margin-left:50%;
+  margin-top:15vh;
+  animation:fill 3s ease-out 7s 1;
+} 
+#box{
+  visibility:hidden;
+  stroke-width:5; 
+  stroke:black;  
+  stroke-width:5;
+  margin-left:-450px;
+  animation:appear 3s ease 7s 1;
+}
 }
 .dot{
   visibility:hidden;
@@ -186,3 +206,12 @@ animation:flyb 2s ease infinite;
 transform-origin:0% 0%;
 margin-left:50px;
 }
+@media only screen and (max-width: 600px) {
+#butterfly{
+  perspective:5000px;
+  transform:scale(0.2);
+  margin-top:15vh;
+  margin-left:50%;
+  animation: appear 5s ease  1;
+}
+  }
