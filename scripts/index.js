@@ -1,9 +1,7 @@
 // TO MAKE ANIMATION WORK PROPERLY UNCOMMENT THIS IN THE END
-/*
 window.onload = function() {
   scrollToSection('landing',0);
 }
-*/
 
 var isMobile = {
   Android: function() {
@@ -31,6 +29,8 @@ var isMobile = {
   }
 };
 
+var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
 // nav-bar
 let toggled = false;
 const nav = document.getElementsByClassName('nav')[0];
@@ -40,11 +40,11 @@ const navUl = document.getElementsByClassName('nav-toggle')[0];
 var fullpage = $("#fullpage");
 var delay = 500;
 if(!isMobile.any()){
-  var fullpageObj = new FullPage(fullpage, delay);        //FullPage object.... Add all transition functions to this object
+  var fullpageObj = new FullPage(fullpage, delay, isSafari);        //FullPage object.... Add all transition functions to this object
   console.log('testing');
 }
 else {
-  var fullpageObj = new FullPage(fullpage, delay);
+  var fullpageObj = new FullPage(fullpage, delay, isSafari);
   console.log('running mobile');
 }
 
@@ -72,14 +72,16 @@ function showNav() {
   nav.classList.add('active');
   setTimeout(function() {
     navUl.classList.remove('nav-toggle');
-  },400)
+  },270)
 }
 
 function hideNav() {
   toggled = false;
-  btn.classList.remove('toggled');
   nav.classList.remove('active');
-  navUl.classList.add('nav-toggle');
+  btn.classList.remove('toggled');
+  setTimeout(function() {
+    navUl.classList.add('nav-toggle');
+  },220)
 }
 
 // function animateSection(sectionNum) {
