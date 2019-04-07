@@ -659,7 +659,7 @@ footer {
   margin: auto;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
 
   .footerDiv {
     grid-template-areas: "ibeto . . . excel" ". icon1 icon2 icon3 ." ". brand brand brand .";
@@ -682,7 +682,7 @@ footer {
 
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 500px) {
   .footerDiv .logo div a {
     font-size: 12px;
     padding: 0 4px;
