@@ -952,6 +952,10 @@ footer {
     grid-template-columns: none;
     padding-left: 0px;
   }
+
+  .rewards-container li{
+    font-size: 1em;
+  }
   
   .section-text {
     padding: 10vw;
