@@ -953,7 +953,9 @@ footer {
     padding-left: 0px;
   }
 
-  
+  .rewards-container ul{
+    font-size: 18px;
+  }
   
   .section-text {
     padding: 10vw;
