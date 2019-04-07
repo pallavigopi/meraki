@@ -384,8 +384,8 @@ padding: 1rem;
 .rewards-container > .section-text{
   margin-top: 5vh;
 }
-.rewards-container li{
-  font-size: 1.15em;
+.rewards-container ul{
+  font-size: 1.5rem;
 }
 
 
@@ -953,9 +953,7 @@ footer {
     padding-left: 0px;
   }
 
-  .rewards-container li{
-    font-size: 20px;
-  }
+  
   
   .section-text {
     padding: 10vw;
