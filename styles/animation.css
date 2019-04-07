@@ -111,10 +111,10 @@ html, body{
   z-index:10;
   visibility:hidden;
 }
-#citym1{animation:sidea 10s linear 17s infinite; filter:brightness(0.7);}
-#citym2{animation:sideb 10s linear 17s infinite; filter:brightness(0.7);}
-#citym3{animation:sidec 10s linear 17s infinite; filter:brightness(0.7);}
-#citym4{animation:sided 10s linear 17s infinite; filter:brightness(0.7);}
+#citym1{animation:sidea 10s linear 17s infinite; filter:brightness(0.5);}
+#citym2{animation:sideb 10s linear 17s infinite; filter:brightness(0.5);}
+#citym3{animation:sidec 10s linear 17s infinite; filter:brightness(0.5);}
+#citym4{animation:sided 10s linear 17s infinite; filter:brightness(0.5);}
 @media only screen and (max-width: 600px) {
 .city_wrap{
   transform:scale(0.5);
