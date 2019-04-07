@@ -93,16 +93,16 @@ class FullPage{
                     return;
                 fullpageObj.scroll = false;
                 setTimeout(function(){ fullpageObj.scroll = true }, fullpageObj.scrollDelay);
-                // if(e.originalEvent.deltaY > 10) {
-                //     fullpageObj.nextSection();
-                // } else if(e.originalEvent.deltaY < 10) {
-                //     fullpageObj.prevSection();
-                // }
-                if (e.originalEvent.wheelDelta /120 > 0) { // scroll up event
-                    fullpageObj.prevSection();
-                } else { // scroll down event
+                if(e.originalEvent.deltaY > 30) {
                     fullpageObj.nextSection();
+                } else if(e.originalEvent.deltaY < 0) {
+                    fullpageObj.prevSection();
                 }
+                // if (e.originalEvent.wheelDelta /120 > 0) { // scroll up event
+                //     fullpageObj.prevSection();
+                // } else { // scroll down event
+                //     fullpageObj.nextSection();
+                // }
             }
         });
 
