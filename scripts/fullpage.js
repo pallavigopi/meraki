@@ -68,23 +68,23 @@ class FullPage{
         this.finVerticalTouch = 0;
         var fullpageObj = this;
 
-        fullpage.bind('touchstart', function(e){
-            fullpageObj.initVerticalTouch = e.originalEvent.touches[0].screenY;
-         });
+        // fullpage.bind('touchstart', function(e){
+        //     fullpageObj.initVerticalTouch = e.originalEvent.touches[0].screenY;
+        //  });
 
-        fullpage.bind('touchmove', function(e){
-            fullpageObj.finVerticalTouch = e.originalEvent.touches[0].screenY;
-        });
+        // fullpage.bind('touchmove', function(e){
+        //     fullpageObj.finVerticalTouch = e.originalEvent.touches[0].screenY;
+        // });
 
 
-        fullpage.bind('touchend', function(e){
-            var delta = fullpageObj.finVerticalTouch - fullpageObj.initVerticalTouch;
-            if(delta > 100)
-                fullpageObj.prevSection();
-            else if(delta < -100)
-                fullpageObj.nextSection();
-            fullpageObj.initVerticalTouch = fullpageObj.finVerticalTouch = 0;
-        });
+        // fullpage.bind('touchend', function(e){
+        //     var delta = fullpageObj.finVerticalTouch - fullpageObj.initVerticalTouch;
+        //     if(delta > 100)
+        //         fullpageObj.prevSection();
+        //     else if(delta < -100)
+        //         fullpageObj.nextSection();
+        //     fullpageObj.initVerticalTouch = fullpageObj.finVerticalTouch = 0;
+        // });
 
 
         $(window).bind('wheel', function(e){
@@ -95,7 +95,7 @@ class FullPage{
                 setTimeout(function(){ fullpageObj.scroll = true }, fullpageObj.scrollDelay);
                 if(e.originalEvent.deltaY > 30) {
                     fullpageObj.nextSection();
-                } else if(e.originalEvent.deltaY < 0) {
+                } else if(e.originalEvent.deltaY < -30) {
                     fullpageObj.prevSection();
                 }
                 // if (e.originalEvent.wheelDelta /120 > 0) { // scroll up event
