@@ -93,9 +93,9 @@ class FullPage{
                     return;
                 fullpageObj.scroll = false;
                 setTimeout(function(){ fullpageObj.scroll = true }, fullpageObj.scrollDelay);
-                if(e.originalEvent.deltaY > 20) {
+                if(e.originalEvent.deltaY > 5) {
                     fullpageObj.nextSection();
-                } else if(e.originalEvent.deltaY < -20) {
+                } else if(e.originalEvent.deltaY < -5) {
                     fullpageObj.prevSection();
                 }
                 // if (e.originalEvent.wheelDelta /120 > 0) { // scroll up event
