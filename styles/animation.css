@@ -133,7 +133,7 @@ html, body{
   width:100px;
   height:100px;
   margin-left:50%;
-  margin-top:15vh;
+  margin-top:2vh;
   animation:fill 3s ease-out 7s 1;
 } 
 #box{
