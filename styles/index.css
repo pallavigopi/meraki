@@ -817,6 +817,9 @@ footer {
    width:15vh;
    height: 15vh;
  }
+ .rewards-container ul{
+  font-size: 18px;
+}
 }
 
 @media only screen and (max-width:500px){
