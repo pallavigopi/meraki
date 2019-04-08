@@ -32,7 +32,7 @@ html, body{
   100%{transform:translateY(-10px);}
 }
 #six {
-  font-size:3vh; 
+  font-size:5vh; 
   margin-top:30px; 
   visibility:hidden;
   opacity:1;
