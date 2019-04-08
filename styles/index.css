@@ -728,6 +728,7 @@ margin-bottom:0vh;
 }
 .event-card{
   position: relative;
+  padding-left: 45px;
   height:20vw;
   width: auto;
   border-radius: 10px;
