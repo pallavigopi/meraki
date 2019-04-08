@@ -38,7 +38,7 @@ const btn = document.getElementsByClassName('nav-tgl')[0];
 const navUl = document.getElementsByClassName('nav-toggle')[0];
 
 var fullpage = $("#fullpage");
-var delay = 900;
+var delay = 500;
 if(!isMobile.any()){
   var fullpageObj = new FullPage(fullpage, delay, isSafari);        //FullPage object.... Add all transition functions to this object
   console.log('testing');
