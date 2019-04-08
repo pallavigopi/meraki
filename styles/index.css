@@ -699,7 +699,7 @@ footer {
   }
 
   .icon3 img{
-    height: 30px;
+    height: 32px;
   }
 
 }
@@ -874,7 +874,7 @@ margin-bottom:0vh;
   .nav-ul{
     padding-left: 5vw;
     font-size: 1.75rem;
-    padding-top: 7.5rem;
+    padding-top: 10vh;
   }
   
   .nav-ul li{
@@ -973,6 +973,9 @@ margin-bottom:0vh;
     display: none;
   }
   
+  .button{
+    padding: 20px 35px;
+  }
   
   .rewards-container{
     display:grid;
@@ -1037,7 +1040,8 @@ margin-bottom:0vh;
   }
   .contact-dets{
     line-height: 1.2;
-    font-size: 15px;
+    font-size: 14px;
+    word-wrap: break-word;
   }
 }
 
