@@ -3,6 +3,7 @@ html, body{
   height:100%;
   margin:0px;
   overflow: hidden;
+  background-image: linear-gradient(orange, #e38900); color:white;
 }
 .absolute{position:absolute;}
 #all{position:relative;}
@@ -139,7 +140,7 @@ html, body{
 #box{
   visibility:hidden;
   stroke-width:5; 
-  stroke:black;  
+  stroke:white;  
   stroke-width:5;
   margin-left:-400px;
   animation:appear 3s ease 7s 1;
@@ -154,7 +155,7 @@ html, body{
 #box{
   visibility:hidden;
   stroke-width:5; 
-  stroke:black;  
+  stroke:white;  
   stroke-width:5;
   margin-left:-450px;
   animation:appear 3s ease 7s 1;
@@ -163,9 +164,9 @@ html, body{
 .dot{
   visibility:hidden;
   r:7;
-  fill:white;
+  fill:orange;
   stroke-width:5; 
-  stroke:black;  
+  stroke:white;  
   animation:appear 5s ease 5s 1;
 }
 @-webkit-keyframes colors{
