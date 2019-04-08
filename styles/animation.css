@@ -169,18 +169,7 @@ html, body{
   stroke:white;  
   animation:appear 5s ease 5s 1;
 }
-@-webkit-keyframes colors{
-  0%{filter:  hue-rotate(300deg);}
-  25%{filter: hue-rotate(300deg);}
-  26%{filter: hue-rotate(290deg);}
-  50%{filter: hue-rotate(280deg);}
-  51%{filter: hue-rotate(280deg);}
-  75%{filter: hue-rotate(180deg);}
-  76%{filter: hue-rotate(180deg);}
-  100%{filter:hue-rotate(0deg);}
-}
 #color{
-animation:colors 4s linear 1;
  }
 #butterfly{
   perspective:5000px;
@@ -198,12 +187,12 @@ animation:colors 4s linear 1;
   50%{transform:rotateY(-40deg);}
 }
 #wing1{
-animation:flya 2s ease infinite;
+filter:grayscale(100%) brightness(10);
 transform-origin:100% 0%;
 margin-left:-700px;
 }
 #wing2{
-animation:flyb 2s ease infinite;
+filter:grayscale(100%) brightness(10);
 transform-origin:0% 0%;
 margin-left:50px;
 }
