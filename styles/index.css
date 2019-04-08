@@ -714,7 +714,9 @@ footer {
 /* Footer ends here */
 
 /* Event Format */
-
+#eventFormatSection h1{
+margin-bottom:0vh;
+}
 .event-container{
 	margin: -17vh 7vw;
 	/* position: absolute; */
@@ -725,8 +727,8 @@ footer {
 }
 .event-card{
   position: relative;
-  height:25vw;
-  width: 25vw;
+  height:20vw;
+  width: auto;
   border-radius: 10px;
   z-index: 0;
   transform: scale(0.95);
@@ -735,8 +737,8 @@ footer {
 
 .event-card img{
   position: relative;
-  height: 25vw;
-  width: 25vw;
+  height: 20vw;
+  width: auto;
   border-radius: 10px;
   background-size: cover;
   background-repeat: no-repeat;
