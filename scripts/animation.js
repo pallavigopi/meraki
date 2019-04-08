@@ -56,6 +56,8 @@ $(document).ready(function(){
  function five1() { $("#five").css({"visibility":"visible"}); }
   setTimeout(five2, 23000);
  function five2() { $("#five").css({"visibility":"hidden"}); }
+   setTimeout(six, 23000);
+ function six() { $("#six").css({"visibility":"visible"}); }
    setTimeout(logos, 23000);
  function logos() { $(".logo").css({"visibility":"visible"}); } 
 
