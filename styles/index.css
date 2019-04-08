@@ -1078,7 +1078,7 @@ margin-bottom:0vh;
   width: 2px;
   height: 100%;
   background: rgb(152, 153, 155);
-  z-index: 1
+  z-index: 5
 }
 
 .timeline-block {
@@ -1112,7 +1112,7 @@ margin-bottom:0vh;
   border: 2px solid #F5F7FA;
   background: rgb(230, 148, 26);
   margin-top: 10px;
-  z-index: 5;
+  z-index: 1;
 }
 
 .timeline-content {
