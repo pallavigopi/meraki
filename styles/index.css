@@ -4,7 +4,7 @@ body{
   background: whitesmoke;
   color: #3b3e4d;
   width: 100vw;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
 
@@ -206,7 +206,7 @@ padding: 1rem;
   top:15%;
   position:absolute;
   font-size:1.25rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
 /* used to postion the content over the bg*/
