@@ -3,7 +3,7 @@ html, body{
   height:100%;
   margin:0px;
   overflow: hidden;
-  background-image: linear-gradient(orange, #e38900); color:white;
+  background-image: linear-gradient(black, #e38900); color:white;
 }
 .absolute{position:absolute;}
 #all{position:relative;}
