@@ -32,16 +32,10 @@ html, body{
   100%{transform:translateY(-10px);}
 }
 #six {
+  font-size:3vh; 
+  margin-top:30px; 
   visibility:hidden;
   opacity:1;
-  margin-left:50%;
-  margin-top:40%;
-  width: 0;
-  height: 0;
-  border-left: 12.5px solid transparent;
-  border-right: 12.5px solid transparent;
-  border-top: 25px solid white;
-  z-index:30;
   animation:float 1s ease 23s infinite;
 }
 @-webkit-keyframes appear{
