@@ -87,7 +87,6 @@ class FullPage{
         // });
 
 
-        /*
 
         $(window).bind('wheel', function(e){
             if(!this.safari) {
@@ -107,8 +106,6 @@ class FullPage{
                 // }
             }
         });
-
-        */
 
         console.log("working");
         $(document).bind("keydown", function(e){
