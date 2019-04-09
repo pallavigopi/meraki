@@ -720,7 +720,8 @@ footer {
 
 /* Event Format */
 #eventFormatSection h1{
-margin-bottom:10vh;
+  margin-top: -25vh;
+  margin-bottom: 8vh;
 }
 .event-container{
 	margin: -20vh 3vw;
