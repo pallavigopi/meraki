@@ -92,7 +92,7 @@ class FullPage{
                 if(!fullpageObj.scroll)
                     return;
                 fullpageObj.scroll = false;
-                setTimeout(function(){ fullpageObj.scroll = true }, fullpageObj.scrollDelay);
+                setTimeout(function(){ fullpageObj.scroll = true; console.log('timeout'); }, fullpageObj.scrollDelay);
                 if(e.originalEvent.deltaY > 0) {
                     fullpageObj.nextSection();
                 } else if(e.originalEvent.deltaY < 0) {

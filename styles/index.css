@@ -749,7 +749,7 @@ margin-bottom:12vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  margin-left: 4vw;
+  margin-left: 3vw;
 }
 
 .event-card:hover{
@@ -798,6 +798,7 @@ margin-bottom:12vh;
   .event-card img{
     height: 30vw;
     width: 30vw;
+    margin-left: 2vw;
   }
 }
 
@@ -966,7 +967,7 @@ margin-bottom:12vh;
   }
 
   #aboutUsSection .image-container img{
-    width: 100%;
+    width: auto;
     height: 100%;
   }
   
