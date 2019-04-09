@@ -54,13 +54,13 @@ html, body{
 #excel_parent{margin-left:100%;}
 .logo{
   visibility:hidden;
-  height:20vh;
-  width:20vh;
+  height:30vh;
+  width:30vh;
   animation:appear 1s ease 23s 1;
 }
 #ibeto{
-  margin-left:-10vh;
-  margin-top:-20vh;
+  margin-left:-15vh;
+  margin-top:-30vh;
 }
 .city_wrap{
   transform:scale(1);
