@@ -720,10 +720,10 @@ footer {
 
 /* Event Format */
 #eventFormatSection h1{
-margin-bottom:12vh;
+margin-bottom:10vh;
 }
 .event-container{
-	margin: -17vh 3vw;
+	margin: -20vh 3vw;
 	/* position: absolute; */
 	display:grid;
 	grid-template-columns: auto auto auto ;
