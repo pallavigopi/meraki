@@ -5,23 +5,23 @@ window.onload = function() {
 
 var isMobile = {
   Android: function() {
-          console.log('android');
+          // console.log('android');
           return navigator.userAgent.match(/Android/i);
   },
   BlackBerry: function() {
-          console.log('blackberry');
+          // console.log('blackberry');
           return navigator.userAgent.match(/BlackBerry/i);
   },
   iOS: function() {
-          console.log('ios');
+          // console.log('ios');
           return navigator.userAgent.match(/iPhone|iPad|iPod/i);
   },
   Opera: function() {
-          console.log('opera');
+          // console.log('opera');
           return navigator.userAgent.match(/Opera Mini/i);
   },
   Windows: function() {
-          console.log('windows');
+          // console.log('windows');
           return navigator.userAgent.match(/IEMobile/i);
   },
   any: function() {

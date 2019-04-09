@@ -1,7 +1,7 @@
 class FullPage{
 
     animateSection(sectionNum) {
-        console.log(sectionNum);
+        // console.log(sectionNum);
         if(sectionNum==4) {
             TweenMax.staggerFrom(".animate"+sectionNum,0.6,{ease: Power2.easeIn, opacity: 0, delay: 0.3});
         }
@@ -19,7 +19,7 @@ class FullPage{
             return;
         }
         this.section++;
-        console.log(this.section);
+        // console.log(this.section);
         $('html,body').animate({
             scrollTop: $(".section-"+this.section).first().offset().top},
             1000);
@@ -30,7 +30,6 @@ class FullPage{
         if(this.section == 0)
             return;
         this.section--;
-        console.log
         $('html,body').animate({
             scrollTop: $(".section-"+this.section).first().offset().top},
             1000);
@@ -95,7 +94,7 @@ class FullPage{
                 if(!fullpageObj.scroll)
                     return;
                 fullpageObj.scroll = false;
-                setTimeout(function(){ fullpageObj.scroll = true; console.log('timeout'); }, fullpageObj.scrollDelay);
+                setTimeout(function(){ fullpageObj.scroll = true}, fullpageObj.scrollDelay);
                 if(e.originalEvent.deltaY > 0) {
                     e.preventDefault();
                     fullpageObj.nextSection();
