@@ -8,6 +8,10 @@ body{
   font-weight: 400;
 }
 
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
 @font-face { 
   font-family: 'bebas'; 
   font-weight: bold; 
