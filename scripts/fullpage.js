@@ -42,7 +42,7 @@ class FullPage{
             scrollTop: $("#"+e+"Section").offset().top},
             1000);
         this.section = sectionNumber;
-        this.animateSection(this.section);
+        // this.animateSection(this.section);
     }
 
     setTransition(str, func){
@@ -88,40 +88,40 @@ class FullPage{
         // });
 
 
-        $(window).bind('wheel', function(e){
-            e.preventDefault();
-            if(!this.safari) {
-                if(!fullpageObj.scroll)
-                    return;
-                fullpageObj.scroll = false;
-                setTimeout(function(){ fullpageObj.scroll = true}, fullpageObj.scrollDelay);
-                if(e.originalEvent.deltaY > 0) {
-                    e.preventDefault();
-                    fullpageObj.nextSection();
-                } else if(e.originalEvent.deltaY < 0) {
-                    e.preventDefault();
-                    fullpageObj.prevSection();
-                }
-                // if (e.originalEvent.wheelDelta /120 > 0) { // scroll up event
-                //     fullpageObj.prevSection();
-                // } else { // scroll down event
-                //     fullpageObj.nextSection();
-                // }
-            }
-            // this.section = Math.round(($(document).scrollTop()) /window.innerHeight);
-            // console.log(this.section);
-            // console.log(Math.round(($(document).scrollTop()) /window.innerHeight));
-        });
+        // $(window).bind('wheel', function(e){
+        //     e.preventDefault();
+        //     if(!this.safari) {
+        //         if(!fullpageObj.scroll)
+        //             return;
+        //         fullpageObj.scroll = false;
+        //         setTimeout(function(){ fullpageObj.scroll = true}, fullpageObj.scrollDelay);
+        //         if(e.originalEvent.deltaY > 0) {
+        //             e.preventDefault();
+        //             fullpageObj.nextSection();
+        //         } else if(e.originalEvent.deltaY < 0) {
+        //             e.preventDefault();
+        //             fullpageObj.prevSection();
+        //         }
+        //         // if (e.originalEvent.wheelDelta /120 > 0) { // scroll up event
+        //         //     fullpageObj.prevSection();
+        //         // } else { // scroll down event
+        //         //     fullpageObj.nextSection();
+        //         // }
+        //     }
+        //     // this.section = Math.round(($(document).scrollTop()) /window.innerHeight);
+        //     // console.log(this.section);
+        //     // console.log(Math.round(($(document).scrollTop()) /window.innerHeight));
+        // });
 
-        console.log("working");
-        $(document).bind("keydown", function(e){
-            if(!this.safari) {
-                if(e.keyCode==40 || e.keyCode==34)
-                    fullpageObj.nextSection();
-                else if(e.keyCode==38 || e.keyCode==33)
-                    fullpageObj.prevSection();
-            }
-        });
+        // console.log("working");
+        // $(document).bind("keydown", function(e){
+        //     if(!this.safari) {
+        //         if(e.keyCode==40 || e.keyCode==34)
+        //             fullpageObj.nextSection();
+        //         else if(e.keyCode==38 || e.keyCode==33)
+        //             fullpageObj.prevSection();
+        //     }
+        // });
     }
 
     }

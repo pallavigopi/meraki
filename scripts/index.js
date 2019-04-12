@@ -3,6 +3,12 @@ window.onload = function() {
   scrollToSection('landing',0);
 }
 
+
+ScrollReveal({ reset: true });
+
+ScrollReveal().reveal('.section-content', {delay: 450, duration: 800});
+
+
 var isMobile = {
   Android: function() {
           // console.log('android');
