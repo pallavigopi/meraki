@@ -206,13 +206,11 @@ html, body{
   50%{transform:rotateY(-40deg);}
 }
 #wing1{
-filter:grayscale(100%) brightness(10);
 animation:flya 2s ease infinite;
 transform-origin:100% 0%;
 margin-left:-700px;
 }
 #wing2{
-filter:grayscale(100%) brightness(10);
 animation:flyb 2s ease infinite;  
 transform-origin:0% 0%;
 margin-left:50px;
