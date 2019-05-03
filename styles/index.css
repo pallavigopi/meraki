@@ -1016,6 +1016,29 @@ footer {
     padding: 20px 35px;
   }
   
+  /* sponsors */
+  .sponsor{
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+  }
+
+  .sponsor h1{
+    font-size: 2rem;
+  }
+
+  .sponsor-container {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 5%;
+    padding-top: 1vh;
+    padding-left: 7%;
+  }
+
+  .title-sponsor img {
+    height: auto;
+    width: 80%;
+  }
+
   .rewards-container{
     display:grid;
     grid-template-columns: none;
