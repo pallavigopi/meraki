@@ -935,6 +935,7 @@ footer {
     height: 80vw;
     width: 80vw;
     margin-top: 30vh;
+    padding-left: 8vw;
   }
 
   #eventFormatSection h1 {
