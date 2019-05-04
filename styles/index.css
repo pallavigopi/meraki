@@ -289,6 +289,10 @@ width:50%;
   
 }
 
+.title-sponsor .geojit{
+  margin-left:-15vh;
+}
+
 .image-container {
   height:50vh;
   width:50vh;
