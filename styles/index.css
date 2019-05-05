@@ -272,12 +272,13 @@ padding: 1rem;
 }
 
 .sponsor{
+  padding-top: 5vh;
   padding-bottom:10vh;
 }
 .sponsor-container{
  display: grid;
  grid-template-columns: 30% 30% 30%;
- grid-column-gap: 10%;
+ grid-column-gap: 5%;
  padding-top:5vh;
  padding-left:10%;
 
@@ -289,8 +290,8 @@ width:50%;
   
 }
 
-.title-sponsor .geojit{
-  margin-left:-15vh;
+.geojit{
+  margin-left:-10vh;
 }
 
 .image-container {
@@ -1042,6 +1043,9 @@ footer {
   .title-sponsor img {
     height: auto;
     width: 80%;
+  }
+  .geojit{
+    margin-left:0vh;
   }
 
   .rewards-container{
