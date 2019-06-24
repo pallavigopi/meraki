@@ -1174,7 +1174,7 @@ footer {
 
 .timeline-block-left {
   float: left;
-  direction: rtl
+  direction: rtl;
 }
 
 .marker {
@@ -1186,6 +1186,7 @@ footer {
   margin-top: 10px;
   z-index: 1;
 }
+
 
 .timeline-content {
   width: 95%;
@@ -1202,7 +1203,7 @@ footer {
 
 .timeline-content span {
   font-size: 15px;
-  color: #888080;
+  color: #353333;
 }
 
 

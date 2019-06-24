@@ -1125,14 +1125,7 @@ footer {
   margin-bottom:0.5vw;
 }
 
-#timelineSection img{
-  margin-top:-2vh;
-  padding-left:7vw;
-  height:85vh;
-  width:85vw;
-}
 .timeline-container {
-  display: none;
   width: 80%;
   padding: 30px 0;
   margin: 30px auto;
@@ -1141,7 +1134,6 @@ footer {
 }
 
 .timeline-container:before {
-  display: none;
   content: '';
   position: absolute;
   top: 0;
@@ -1187,6 +1179,13 @@ footer {
   z-index: 1;
 }
 
+.timeline-block-right .marker{
+  margin-left:-2px;
+}
+.timeline-block-left .marker{
+  margin-right:-2px;
+}
+
 .timeline-content {
   width: 95%;
   padding: 0 15px;
@@ -1226,10 +1225,16 @@ footer {
   .timeline-block-right {
      float: none;
   }
+  .timeline-block-right .marker{
+    margin-left:-1px;
+  }
 
   .timeline-block-left {
      float: none;
      direction: ltr;
+  }
+  .timeline-block-left .marker{
+    margin-right:-.5px;
   }
 }
 
