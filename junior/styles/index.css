@@ -759,7 +759,7 @@ footer {
   display:block;
 }
 .event-container{
-	margin: -20vh 3vw;
+	margin: 30vh 3vw;
 	/* position: absolute; */
 	display:grid;
 	grid-template-columns: auto auto ;
@@ -797,14 +797,15 @@ footer {
 
 
 .event-card-info{
-    margin-top:-3vh;
+    margin-top:10vh;
     text-align: center;
     font-style: 16px;
     line-height: 24px;
     z-index: 1;
     opacity:1;
-    font-size: 2rem;
+    font-size: 1.81rem;
     font-weight: bolder;
+    padding-top:-10vh;
   
  }
 
@@ -833,6 +834,7 @@ footer {
     display:none;
   }
   .event-card{
+   
     height: 40vw;
     width: 40vw;
   }
