@@ -225,7 +225,7 @@ padding: 1rem;
 } /* to move the content to the right side*/
 
 .problem-container{
-  margin-top: 7vh;
+  margin-top: 20vh;
   display:grid;
   grid-template-columns: 40% 50%;
   font-size:1.5rem;
@@ -750,6 +750,9 @@ footer {
 /* Footer ends here */
 
 /* Event Format */
+#eventFormatSection{
+  margin-bottom: 15vh;
+}
 #eventFormatSection h1{
   margin-top: -23vh;
   margin-bottom: 4vh;
@@ -1022,8 +1025,9 @@ footer {
   .problem-container{
     display:grid;
     grid-template-columns: none;
-    
+    margin-top:-5vh;
   }
+
 
   .problem-container,.rewards-container ul{
     list-style: initial;
